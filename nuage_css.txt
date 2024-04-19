@@ -1,0 +1,35 @@
+.nuage {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    width: 150px;
+    height: 120px;
+    border-top: solid blueviolet;
+    border-left: solid blueviolet;
+    border-right: solid blueviolet;
+    border-bottom: solid blueviolet;
+    border-radius: 50% 50% 0% 0%;
+    background-color: blueviolet;
+}
+.nuage::before {
+    content: "";
+    position: relative;
+    top:75px;
+    left: -80px;
+    border-top: 50px solid blueviolet;
+    border-left: 50px solid blueviolet;
+    border-right: 50px solid blueviolet;
+    border-bottom: 30px solid blueviolet;
+    border-radius: 50% 50% 0% 50%;
+}
+.nuage::after {
+    content: "";
+    position: relative;
+    top:55px;
+    left: 30px;
+    border-top: 30px solid blueviolet;
+    border-left: 50px solid blueviolet;
+    border-right: 30px solid blueviolet;
+    border-bottom: 50px solid blueviolet;
+    border-radius: 50% 50% 50% 0%;
+}
