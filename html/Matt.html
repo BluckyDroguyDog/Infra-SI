@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
+    <script src="../js/matt.js" defer></script>
 </head>
 
 <body>
     <main>
-        <div>r
-            <input type="image" id="profil-image" src="../img/IMG_6946.png" data-0="display:none; top:5%"
+        <div>
+            <input type="image" id="profil-image" src="../img/IMG_6946.png" data-0="display:block; top:5%"
                 data-600="display:none; top:-100%">
             <div class="tete" data-0="display:none" data-100="display:block; top:100%"
                 data-1100="display:none; top:-100%">
@@ -23,53 +24,64 @@
         </div>
 
         <div>
-            <h1 data-100="scale:1; top:110%; display:block" data-800="scale:2; top:5%" data-1800="top:5%"
-                data-2000="top:-100%; display:none">
-                Mes Projets</h1>
+            <h1 data-100="scale:1; top:110%; display:block" data-800="scale:2; top:5%" data-1700="top:5%"
+                data-2000="top:-100%; display:none" style="margin-left: 5%">
+                Mes Projet</h1>
             <div class="fp n1" data-350="left:0%; top:100%" data-1100="left:70%; top:25%" data-1400="left:70%"
                 data-1500="left:120%">
-                Splendor Numérique <br> HTML, CSS, JAVASCRIPT</div>
+                Splendor Duel <br>Numérique</div>
             <div class="fp n2" data-450="left:100%; top:120%" data-1200="left:20%; top:45%" data-1500="left:20%"
                 data-1600="left:-20%">
-                Forum <br> GO, HTML, CSS</div>
+                Forum</div>
             <div class="fp n3" data-550="left:0%; top:140%" data-1300="left:70%; top:65%" data-1600="left:70%"
                 data-1700="left:120%">
-                Puissance 4 <br> JAVA</div>
-        </div>
-        <div class="fp n4"></div>
-        <div class="fp n5"></div>
+                Puissance 4
+            </div>
         </div>
 
-        <div>
-            <img src="../img/logo_github.png" alt="GitHub" class="logo">
-            <img src="../img/logo_linkedin.png" alt="LinkedIn" class="logo">
-            <img src="../img/logo_gmail.png" alt="Mail" class="logo">
-            GitHub, LinkedIn, ...
-        </div> 
+        <div class="Reseaux" data-0="display: none; top:110%" data-1650="display: block; top:110%"
+            data-2000="display: none; top:-50%">
+            <div class="plogo">
+                <div class="plogo-item">
+                    <a class="lienR" href="https://github.com/BluckyDroguyDog">
+                        <img src="../img/logo_github.png" alt="GitHub" class="logo">
+                        <span>Github</span>
+                    </a>
+                </div>
+                <div class="plogo-item">
+                    <a class="lienR" href="https://fr.linkedin.com/in/matthéo-raud-9079aa262">
+                        <img src="../img/logo_linkedin.png" alt="LinkedIn" class="logo">
+                        <span>Linkedin</span>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-
-        <div class="Contact" data-0="display:none" data-1900="display:block" data-3000="display:none">
+        <div class="Contact" data-0="display: none; top:110%" data-1700="display: block; top:110%"
+        data-2000="display: none; top:5">
             <h1>Formulaire de contact</h1>
-            <p>Nom:</p>
-            <p>Prénom:</p>
-            <input type="text" name="nom" id="nom">
-            <input type="text" name="prenom" id="prenom">
-            <br>
-            <p>Email:</p>
-            <p>Numéro de Téléphone:</p>
-            <input type="email" name="email" id="email">
-            <input type="tel" name="numero_tel" id="num">
-            <br>
-            <p>Message:</p>
-            <textarea name="message" id="message" cols="45" rows="12"></textarea>
+
+            <form id="contactForm">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required><br><br>
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required><br><br>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telephone">Téléphone :</label>
+                <input type="tel" id="num" name="telephone" required><br><br>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+
+                <button id="btnEnvoyerMail">Envoyer</button>
+            </form>
         </div>
-        <fieldset data-0="display:none" data-3000="display:block" date-4000="display:none">
-            <legend>Formulaire de Contact</legend>
-            <input type="text" name="name" id="name">
-            <label for="name"></label><br>
-        </fieldset>
+        
     </main>
-    <footer></footer>
 
 </body>
 
