@@ -4,6 +4,7 @@
 gsap.to(".circle", {
    
     y: 450,
+
     
     backgroundColor: "",
     
@@ -28,11 +29,13 @@ const circles = gsap.utils.toArray('.circle');
 gsap.to(circles, {
     duration: 1,
     repeat: 4, // 5 répétitions au total
+
     physics2D: {
         velocity: 300,
         gravity: 500
     },
-    onComplete: () => {
+    
+        onComplete: () => {
         gsap.to([circles[0], circles[1], circles[2], circles[3]], {
             duration: 3,
             x: -600,
@@ -49,7 +52,7 @@ gsap.to(circles, {
         gsap.to([circles[4], circles[5]], {
             duration: 3,
             y: 250,
-            ease: "0.3",
+            ease: "0.2",
             onStart: () => {
                 // Affichage des éléments en CSS
                 circles[4].style.display = 'block';

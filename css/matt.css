@@ -128,3 +128,48 @@ button {
     padding: 10px 20px; /* Ajustez la taille du padding du bouton */
     margin-top: 10px; /* Espacement au-dessus du bouton */
 }
+
+.HautPage {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.Accueil {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.Language {
+    position: fixed;
+    left: 40%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10%;
+}
+.line_logo {
+    position: fixed;
+    left: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.img_logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
